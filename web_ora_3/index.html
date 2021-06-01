@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+
+    <body>
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+                    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                        <div class="uk-navbar-center">
+                                <p class="uk-h1">Shadooww5 Stream</p>
+                        </div>
+                        <div class="uk-navbar-left">
+                                    <ul class="uk-navbar-nav">
+                                        <li>
+                                            <a href="#">Menü</a>
+                                            <div class="uk-navbar-dropdown">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li><a href="#intro">Bemutatkozás</a></li>
+                                                    <li><a href="#stream">Streamek</a></li>
+                                                    <li><a href="#donate">Donation</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <div>Login</div>
+                            <a href="login.html" uk-icon="sign-in"></a>
+                        </div>
+                    </nav>
+            </div>
+
+            <div id="intro" class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(mine.jpg);">
+                            <p class="uk-h4" style="color:white">
+                                    Gyermelyről származom, innen is ered a becenevem: Tészta. <br>
+                                    Jelenleg a Corvinus Egyetem Pénzügy mesterszakára járok, és a Heller Farkas Szakkollégium tagjaként egy pesti kollégiumban lakom. <br>
+                                    Iskola mellett a Morgan Stanley Credit Capital Team-jének gyakornokaként dolgozom. 
+                            </p>
+            </div>
+
+            <div id="stream" class="uk-section uk-section-default">
+                    <div class="uk-container">
+                
+                        <h1>Streamek</h1>
+                
+                        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <h3>Minecraft Stream</h3>
+                                <img src="minecraft.jpg" alt="minecraft">
+                            </div>
+                            <div>
+                                <h3>Heathstone Stream</h3>
+                                <img src="card.png" alt="hearthstone">
+                            </div>
+                        </div>
+                
+                    </div>
+            </div>
+            
+            <div id="donate" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex uk-flex-center" uk-parallax="sepia: 100;" style="background-image: url(donate.png);">
+
+                <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #donate; blur: 0,15;" style="color:white">
+                Donate pls
+                </h1>
+                
+            </div>
+
+    </body>
+
+</html>
+
+

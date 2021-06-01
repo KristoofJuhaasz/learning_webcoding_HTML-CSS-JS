@@ -1,0 +1,84 @@
+﻿* { 
+      font-family: 'Times New Roman', Times, serif;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: rgb(0, 0, 0);
+      font-size: 16px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-areas: 
+        'header header header header header '
+        'new-post new-post new-post right right '
+        'post post post right right '
+        'footer footer footer footer footer ';
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50px 100px 300px 30px;
+    background-color: rgb(0, 0, 0);
+    grid-gap: 5px;
+    border-width: 0px; 
+  }
+
+  .item1 { 
+      grid-area: header; 
+      background-color: rgba(255, 255, 255, 0.8); 
+      border-width: 2px; /*border vastagsága*/
+      border-color: #ffffff; /*border színe*/
+      border-style: solid; /*stílusa*/
+      border-radius: 5px; /*a sarkok lekerekítése bizonyos sugárral*/; }
+  
+    .item2 { 
+      grid-area: new-post; 
+      background-color: rgba(49, 56, 155, 0.8);
+      border-width: 2px; /*border vastagsága*/
+      border-color: #ffffff; /*border színe*/
+      border-style: solid; /*stílusa*/
+      border-radius: 5px; /*a sarkok lekerekítése bizonyos sugárral*/; }
+
+    .item2:hover {
+        background-color: rgb(183, 0, 255);
+        border-width: 5px; /*border vastagsága*/
+        font-weight: bold;
+    }
+    
+  .item3 { 
+      grid-area: post; 
+      background-color: rgba(96, 119, 248, 0.8); 
+      border-width: 2px; /*border vastagsága*/
+      border-color: #ffffff; /*border színe*/
+      border-style: solid; /*stílusa*/
+      border-radius: 5px; /*a sarkok lekerekítése bizonyos sugárral*/; }
+  .item4 { 
+      grid-area: right; 
+      background-color: rgba(255, 255, 255, 0.8);     
+      border-width: 2px; /*border vastagsága*/
+      border-color: #ffffff; /*border színe*/
+      border-style: solid; /*stílusa*/
+      border-radius: 5px; /*a sarkok lekerekítése bizonyos sugárral*/; }
+  .item5 { 
+      grid-area: footer; 
+      background-color: rgba(255, 255, 255, 0.8);     
+      border-width: 2px; /*border vastagsága*/
+      border-color: #ffffff; /*border színe*/
+      border-style: solid; /*stílusa*/
+      border-radius: 5px; /*a sarkok lekerekítése bizonyos sugárral*/; }
+
+    .button {
+        background-color:  rgba(49, 56, 155, 0.8); 
+        border-width: 2px;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .button:hover {
+        background-color: rgb(183, 0, 255);
+        border-width: 5px; /*border vastagsága*/
+    }
